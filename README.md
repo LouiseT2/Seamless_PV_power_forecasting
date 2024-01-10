@@ -16,7 +16,9 @@ The aim of this research project is to propose a new power generation forecastin
 
 ## Dataset description :
 The data used in this project comes from E4C. It is composed of 25 .csv files which each contains 9 exact same columns (containing the same data):date,Sirta_GHI,Clearsky_GHI,Arpege_GHI,SZA,Kc_Sat_mean,Kc_Sat_std,Kc_obs and Wreg. And one different column correponding to the GHI Satelitte prediction, each one from a different time horizon but for the same time prediction. 
-This informations concerned the GHI prediction of the NRlab located in Palaiseau for period of three years from summer of 2017 to summer of 2020. Each row refers to a date with a specific time, data have been collected each day between 5:11:00 and 19:11:00 every 15 minutes meaning we have 57 rows for each day.
+This informations concerned the GHI prediction of the SIRTA observatory located in Palaiseau (France, ‘48.713◦ N; 2.208◦ E’, 157 m above average sea level) for period of three years from summer of 2017 to summer of 2020. Each row refers to a date with a specific time, data have been collected each day between 5:11:00 and 19:11:00 every 15 minutes meaning we have 57 rows for each day.
 Some values are missing (338 rows out of over 44800) in addition to some inconvenient holes in the data set. In particular, the values of september 2018 are all missing.
 ### Columns description :
-**Date:** The date provide the exacte day, hour and minute. 
+**Sirta_GHI:** Sirta_GHI correspond to the GHI observed at the SIRTA observatory, this is our target value which we try to predict. It has been observed at 1 min temporal resolution by a pyranometer (Kipp and Zonen CM22)
+
+**Clearsky_GHI:** 
