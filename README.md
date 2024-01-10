@@ -32,3 +32,4 @@ The NWP (Numerical Weather Prediction) model ARPEGE is utilized by Météo-Franc
 
 **Kc_obs:** Kc_obs is the clear-sky index from real time observed GHI. Meaning Kc_obs=GHIobs/GHIclear-sky.
 
+**Wreg:** The Wreg column contains integers from 1 to 4 corresponding to the four possible Weather Regime in the SIRTA area. This Weather Regime are NAO-((Negative Northern Atlantic Oscillation): anticyclone coming from the north west, brings cold, wet, clouds...; Atlantic Ridge: anticyclone from the middle of Atlantic Ocean; Scandinavian Blocking: anticyclone from North Sea and NAO+(Positive Northern Atlantic Oscillation): Zonal circulation, bring dry, warm, not many clouds...
