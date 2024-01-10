@@ -21,4 +21,11 @@ Some values are missing (338 rows out of over 44800) in addition to some inconve
 ### Columns description :
 **Sirta_GHI:** Sirta_GHI correspond to the GHI observed at the SIRTA observatory, this is our target value which we try to predict. It has been observed at 1 min temporal resolution by a pyranometer (Kipp and Zonen CM22)
 
-**Clearsky_GHI:** 
+**Clearsky_GHI:** Based on satellite images determine for each pixel if there are clouds or not. Then determine using Heliosat method the GHI. Usually used for intra-day forcasting.
+
+**Arpege_GHI:** Arpege_GHI are NWP (Numerical Weather Prediction) provided by Meteo France. Usually used for day-ahead forcasting.
+
+**SZA:** Solar Zenith Angle, describes the daily and seasonal course of the Sun. SZA values are computed through the Solar Position Algorithm
+(SPA)
+
+**Kc_Sat_mean:** 
