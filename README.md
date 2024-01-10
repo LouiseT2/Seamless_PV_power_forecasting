@@ -23,9 +23,12 @@ Some values are missing (338 rows out of over 44800) in addition to some inconve
 
 **Clearsky_GHI:** Based on satellite images determine for each pixel if there are clouds or not. Then determine using Heliosat method the GHI. Usually used for intra-day forcasting.
 
-**Arpege_GHI:** Arpege_GHI are NWP (Numerical Weather Prediction) provided by Meteo France. Usually used for day-ahead forcasting.
+**Arpege_GHI:** 
+The NWP (Numerical Weather Prediction) model ARPEGE is utilized by Météo-France as an operational forecast model. It provides forecasts globally with a horizontal resolution of approximately 7.5 km over mainland France. The model's output, specifically "surface solar radiation downwards," serves as a reference for assessing satellite-based forecasts. ARPEGE employs a 4D-Var data assimilation method for determining initial conditions based on observations. This spectral hydrostatic model run daily at 12:00 UTC for a 0–24 hour forecast period with hourly time resolution. The spatial resolution of this global model is 5 km over Europe, and outputs are linearly interpolated to align with MSG (Meteosat Second Generation) timestamps. Usually used for day-ahead forcasting.
 
-**SZA:** Solar Zenith Angle, describes the daily and seasonal course of the Sun. SZA values are computed through the Solar Position Algorithm
-(SPA)
+**SZA:** Solar Zenith Angle, describes the daily and seasonal course of the Sun. SZA values are computed through the Solar Position Algorithm (SPA).
 
-**Kc_Sat_mean:** 
+**Kc_Sat_mean and Kc_Sat_std:** Kc correspond to Clear-sky index, a variable used  to quantify the amount of solar radiation reaching the Earth's surface under clear-sky conditions in comparison to the potential maximum solar radiation at that location. A Kc value of 1 indicates perfect clarity, meaning the observed solar radiation matches the potential maximum under clear-sky conditions. Values less than 1 indicate a reduction in solar radiation due to atmospheric factors. Kc_Sat_mean represents the spatial mean of Kc_Sat (Kc calculated from satelite measurment) on 50km around SIRTA Observatory. Meanwhile, Kc_Sat_std is the standard deviation of Kc_Sat on 50km around SIRTA Observatory.
+
+**Kc_obs:** Kc_obs is the clear-sky index from real time observed GHI. Meaning Kc_obs=GHIobs/GHIclear-sky.
+
