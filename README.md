@@ -8,7 +8,7 @@ The aim of this research project is to propose a new power generation forecastin
 
 1-Complete a PV power forecasting state of the art.
 
-2- Evaluating and programming  a linear relationship model between satellite and weather forecasting using linear regressions of past observations (Lorenz et al. 2012)
+2- Evaluating and programming  a linear relationship model between satellite and weather forecasting using linear regressions of past observations ([1]Lorenz et al. 2012)
 
 3- Propose and evaluate more advanced machine learning methods and compare them to the reference method.
 
@@ -21,7 +21,12 @@ Some values are missing (338 rows out of over 44800) in addition to some inconve
 ### Columns description :
 **Sirta_GHI:** Sirta_GHI correspond to the GHI observed at the SIRTA observatory, this is our target value which we try to predict. It has been observed at 1 min temporal resolution by a pyranometer (Kipp and Zonen CM22)
 
-**Clearsky_GHI:** Based on satellite images determine for each pixel if there are clouds or not. Then determine using Heliosat method the GHI. Usually used for intra-day forcasting.
+**Clearsky_GHI:** Based on satellite images determine for each pixel if there are clouds or not. Then determine using Heliosat method the GHI. Usually used for intraday forcasting.
+
+**Sat_GHI_T0+x:** Like Clear-sky it is a satellite-based nntraday forecast method. It is determined using a specific method CMV computation method built from Meteosat images and originally dedicated to
+derive synoptic wind for operational weather forecast as illustrated in this diagram from [2]:
+![image](https://github.com/LouiseT2/Seamless_PV_power_forecasting/assets/95853124/b9defad4-2ac3-4efc-b570-8ee3553c804d)
+
 
 **Arpege_GHI:** 
 The NWP (Numerical Weather Prediction) model ARPEGE is utilized by Météo-France as an operational forecast model. It provides forecasts globally with a horizontal resolution of approximately 7.5 km over mainland France. The model's output, specifically "surface solar radiation downwards," serves as a reference for assessing satellite-based forecasts. ARPEGE employs a 4D-Var data assimilation method for determining initial conditions based on observations. This spectral hydrostatic model run daily at 12:00 UTC for a 0–24 hour forecast period with hourly time resolution. The spatial resolution of this global model is 5 km over Europe, and outputs are linearly interpolated to align with MSG (Meteosat Second Generation) timestamps. Usually used for day-ahead forcasting.
@@ -33,3 +38,12 @@ The NWP (Numerical Weather Prediction) model ARPEGE is utilized by Météo-Franc
 **Kc_obs:** Kc_obs is the clear-sky index from real time observed GHI. Meaning Kc_obs=GHIobs/GHIclear-sky.
 
 **Wreg:** The Wreg column contains integers from 1 to 4 corresponding to the four possible Weather Regime in the SIRTA area. This Weather Regime are NAO-((Negative Northern Atlantic Oscillation): anticyclone coming from the north west, brings cold, wet, clouds...; Atlantic Ridge: anticyclone from the middle of Atlantic Ocean; Scandinavian Blocking: anticyclone from North Sea and NAO+(Positive Northern Atlantic Oscillation): Zonal circulation, bring dry, warm, not many clouds...
+
+## Sources
+[1]Lorenz, E., Kuehnert, Jan & Heinemann, Detlev 2012 Short term forecasting of solar irradiance by combining satellite data and numerical weather predictions .
+
+[2]Cros, Sylvain, Badosa, Jordi, Szantaï, André & Haeffelin, Martial 2020 Reliability predictors for solar irradiance satellite-based forecast. Energies 13 (21).
+
+
+
+
