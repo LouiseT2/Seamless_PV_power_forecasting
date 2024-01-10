@@ -14,3 +14,6 @@ The aim of this research project is to propose a new power generation forecastin
 
 4- Set up a finer assessment according to parameters influencing the errors
 
+## Dataset description :
+The data used in this project comes from E4C. It is composed of 25 .csv files which each contains 9 exact same columns (containing the same data) and one different column each correponding to the GHI Satelitte prediction, each one from a different time horizon but on the same period.
+
