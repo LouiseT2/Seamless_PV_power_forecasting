@@ -12,9 +12,8 @@ The aim of this research project is to propose a new power generation forecastin
 
 4- Set up a finer assessment according to parameters influencing the errors
 
-Formulate research questions
+## Formulate research questions
 
-– Write here –
 
 
  
