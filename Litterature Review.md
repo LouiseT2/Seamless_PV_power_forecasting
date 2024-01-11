@@ -12,8 +12,6 @@ The aim of this research project is to propose a new power generation forecastin
 
 4- Set up a finer assessment according to parameters influencing the errors
 
-## Formulate research questions
-
 
 
  
@@ -80,6 +78,10 @@ Time series models, treating power output as a time-dependent variable, include 
 ### Markov Chain
 Sobri et al (2018) [4] also showcase the application of Markov chain models in solar radiation prediction and PV system power generation forecasting, demonstrating their effectiveness in capturing dependencies between states and transitions. The system comprises connected states, where the next state depends solely on the current state. Transitions between states are governed by transition probabilities.
 
+### ANN
+
+ANN models can be used to classified complex non-linear data. The accuracy of the prediction depends on input parameters, training algorithm, and structure configuration [10]. A review focuses on predicting solar radiation using various Artificial Neural Network (ANN) techniques was proposed in 2014 by Yadav et al.[10]. The discussed ANN models in the paper offer improved accuracy compared to Ångström model, conventional, linear, non-linear, and fuzzy logic models. Geographical and meteorological parameters are used as input variables for ANN models in solar radiation prediction. Sunshine hours and air temperature prove to be effective inputs with a high correlation coefficient of 97.65%. A lot of divers ANN are discussed in this review, and, in general, a lot of ANN models have been detrailed in the litteratur for GHI forecasting. Th review separate ANN models in two categories depending on the time horizon efficiency (short term or intraday). 
+
 ## Resources
 
 [a] Objectif 2030 et situation actuelle de la France | Chiffres clés des énergies renouvelables (developpement-durable.gouv.fr)
@@ -102,3 +104,4 @@ Sobri et al (2018) [4] also showcase the application of Markov chain models in s
 
 [9]Li, Y., He, Y., Su, Y., & Shu, L. (2016). Forecasting the daily power output of a grid-connected photovoltaic system based on multivariate adaptive regression splines. Applied Energy, 180, 392-401.
 
+[10]Yadav, A. K., & Chandel, S. S. (2014). Solar radiation prediction using Artificial Neural Network techniques: A review. Renewable and sustainable energy reviews, 33, 772-781.
