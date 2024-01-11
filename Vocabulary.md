@@ -29,7 +29,7 @@ RMSE and MAE are metrics used to evaluate a Regression Model (OLS). By reducing 
 - GMDH (Group Method of Data Handling)
 - GS-GMDH (Generalized Structure Group Method of
 Data Handling ) is used to develop an accurate model for
-simulating the rectangular sharp-crested side weir discharge coefficient.
+simulating the rectangular sharp-crested side weir discharge coefficient.
 - SIS (surface incoming shortwave)
 - ANAKLIM++ (Adjustment of
 Assimilation Software for the Reanalysis of Climate Data)
@@ -43,7 +43,7 @@ surface solar radiation from satellite images. Kc is the clear-sky index (betwee
 - PDF (probability density function): used for continuious variables (!=PMF used for discret)
 - KDE (Kernel Density Estimation)
 - MI (Mutual Information): This is a measure of how much the fact of knowing a variable reduces the uncertainty of another variable. It can identify non-linear relationships between random variables.
-- LASSO (Least Absolute Shrinkage and Selection Operator)
+- LASSO (Least Absolute Shrinkage and Selection Operator)
 - ARIMA (Auto Regressive Integrated Moving Average)
 - ARD (Automatic Relevance Determination)
 - MLP (Multiplayer Perceptron): favorit form of ANN
