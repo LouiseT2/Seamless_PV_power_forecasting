@@ -113,4 +113,6 @@ In Shi et al paper [12], a one-day-ahead PV power output forecasting model for a
 
 [10]Yadav, A. K., & Chandel, S. S. (2014). Solar radiation prediction using Artificial Neural Network techniques: A review. Renewable and sustainable energy reviews, 33, 772-781.
 
-[11] Mellit A, Pavan AM. A 24-h forecast of solar irradiance using artificial neuralnetwork: application for performance prediction of a grid-connected PV plant at Trieste, Italy. Sol Energy 2010;84:807–21.
+[11]Mellit A, Pavan AM. A 24-h forecast of solar irradiance using artificial neuralnetwork: application for performance prediction of a grid-connected PV plant at Trieste, Italy. Sol Energy 2010;84:807–21.
+
+[12]Shi J., Lee W.-J., Liu Y., Yang Y., Wang P. Forecasting power output of photovoltaic systems based on weather classification and support vector machines (2012) IEEE Transactions on Industry Applications, 48 (3), art. no. 6168891, pp. 1064 - 1069, Cited 584 times.
